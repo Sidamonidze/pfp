@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #374151;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .username {
+            color: gray;
+            font-size: 14px;
+        }
+        .bio {
+            font-size: 14px;
+            color: gray;
+            margin: 10px 0;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 15px 0;
+            gap: 2px;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .stats span {
+            display: block;
+            font-weight: bold;
+        }
+        .btn {
+            background: #10B981;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn:hover {
+            background: #059669;
+        }
+        .fab-button {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 50px;
+            height: 50px;
+            background: #EF4444;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="profile-img" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D">
+        <div class="name">Leslie Walton</div>
+        <div class="username">@lesliew</div>
+        <div class="bio">Product Designer, Kyiv</div>
+        <div class="stats">
+            <div><span>17</span> shots</div>
+            <div><span>143</span> following</div>
+            <div><span>57</span> followers</div>
+        </div>
+        <button class="btn">Send message</button>
+    </div>
+    <div class="fab-button">+</div>
+</body>
+</html>
